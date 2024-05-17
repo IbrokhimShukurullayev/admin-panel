@@ -1,0 +1,436 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container-full {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home__all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+}
+
+.home__btn {
+  background: linear-gradient(
+    135.29deg,
+    rgb(182, 113, 254) 0%,
+    rgb(224, 128, 202) 99.462%
+  ) !important;
+  padding: 10px 20px !important;
+  font-size: 20px !important;
+}
+
+.home {
+  background-color: black;
+}
+
+#canvas {
+  width: 99%;
+  min-height: 100%;
+}
+
+.admin-all {
+  display: flex;
+  width: 100%;
+}
+
+.admin-left {
+  min-height: 100vh;
+  background-color: #fff;
+  border: 1px solid #000;
+  width: 350px;
+}
+
+.admin-left-info {
+  min-height: 100vh;
+  padding: 30px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.admin-left-info-1 h1 {
+  font-size: 40px;
+  padding-bottom: 30px;
+  color: #000;
+}
+
+.admin-left-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-left-list a {
+  color: black;
+  font-size: 20px;
+  background-color: white;
+  padding: 6px;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.admin-left-list a.active {
+  background-color: #34776487;
+  color: white;
+  padding: 10px 15px;
+}
+
+.admin-left-info a {
+  text-decoration: none;
+}
+
+.admin-left-info button {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(
+    135.29deg,
+    rgb(182, 113, 254) 0%,
+    rgb(224, 128, 202) 99.462%
+  ) !important;
+  color: white;
+  cursor: pointer;
+}
+
+.admin-right {
+  background-color: #f5f5f5;
+  width: 100%;
+}
+
+.create-pr {
+  padding: 20px;
+}
+
+.create-pr-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: cadetblue;
+  padding: 30px;
+  border-radius: 10px;
+  width: 700px;
+  margin-top: 14px;
+  color: white;
+}
+
+.create-pr-form input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid;
+  width: 100%;
+  width: 310px;
+  outline: none;
+}
+
+.create-pr-form textarea {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+}
+
+.create-pr-input {
+  border: none !important;
+}
+
+.custom-file-input-label {
+  display: inline-block;
+  padding: 10px 103px;
+  background: linear-gradient(
+    135.29deg,
+    rgb(182, 113, 254) 0%,
+    rgb(224, 128, 202) 99.462%
+  ) !important;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.custom-file-input-label:hover {
+  background-color: #c14d00;
+}
+
+.create-pr-btn {
+  background: linear-gradient(
+    135.29deg,
+    rgb(182, 113, 254) 0%,
+    rgb(224, 128, 202) 99.462%
+  ) !important;
+  padding: 10px 30px;
+  border: none;
+  color: white;
+  font-size: 17px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.create-pr-btn svg {
+  font-size: 20px;
+}
+
+.create-pr-input-img p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.create-pr-input-img img {
+  width: 50px;
+}
+
+.create-pr h1 {
+  font-size: 55px;
+  color: #000;
+}
+
+.manage-pr-card {
+  background-color: cadetblue;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 360px;
+}
+
+.manage-product {
+  padding: 30px 10px;
+}
+
+.manage-product-h1 {
+  color: #000;
+  font-size: 45px;
+  padding-bottom: 20px;
+}
+
+.manage-pr-card-img {
+  background-color: white;
+  height: 62%;
+}
+
+.manage-pr-card-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.manage-pr-card-info {
+  padding: 5px 10px 5px 10px;
+}
+
+.manage-pr-card-info-cat {
+  color: red;
+}
+
+.manage-pr-card-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.manage-pr-card-info-title {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.manage-pr-card-info-price {
+  color: white;
+  font-weight: 600;
+}
+
+.manage-pr-card-info-old-price {
+  color: green;
+  font-weight: 600;
+  text-decoration: line-through;
+}
+
+.manage-pr-card-btn {
+  background: linear-gradient(
+    135.29deg,
+    rgb(182, 113, 254) 0%,
+    rgb(224, 128, 202) 99.462%
+  ) !important;
+  color: white;
+  border: none;
+  padding: 7px 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.manage-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  width: 280px;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid rgb(170, 170, 170);
+  box-shadow: 0 0 5px 2px white;
+  overflow: hidden;
+}
+
+.car-img {
+  height: 13vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: cadetblue;
+  position: relative;
+}
+
+.car-img h1 {
+  background-color: grey;
+  color: white;
+  width: 90px;
+  height: 90px;
+  font-size: 40px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -40px;
+  border: 3px solid rgb(138, 138, 0);
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.car-img h1:hover {
+  border: 3px solid transparent;
+}
+
+.card-info {
+  padding: 10px;
+  text-align: center;
+}
+
+.card-info-name {
+  color: grey;
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 40px;
+  padding-bottom: 5px;
+}
+
+.card-info-role {
+  font-size: 18px;
+  font-weight: 600;
+  color: grey;
+  padding-bottom: 5px;
+}
+
+.card-info-role span {
+  color: cadetblue;
+}
+
+.card-info-number {
+  font-weight: 600;
+  color: grey;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  padding-bottom: 5px;
+}
+
+.card-info-number span {
+  color: rgb(138, 138, 0);
+}
+
+.delete-btn {
+  background-color: cadetblue;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.manage-user {
+  padding: 25px;
+}
+
+.manage-user-h1 {
+  font-size: 50px;
+  color: #000;
+  padding-bottom: 20px;
+}
+
+.category {
+  padding: 25px;
+}
+
+.category-h1 {
+  color: #000;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+.category-all {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.category-card {
+  background-color: cadetblue;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+}
+
+.category-btn {
+  background: linear-gradient(
+    135.29deg,
+    rgb(182, 113, 254) 0%,
+    rgb(224, 128, 202) 99.462%
+  ) !important;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 20px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 5px;
+}
