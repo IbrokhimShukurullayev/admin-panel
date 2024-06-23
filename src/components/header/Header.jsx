@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "./header.scss";
+import axios from '../../api';
 
 import { NavLink } from 'react-router-dom';
 import Modal from '../modal/Modal';
@@ -32,8 +33,15 @@ const Header = () => {
 
   const handleLogin = e => {
     e.preventDefault()
+    axios
+      .post("/auth/sign-in", formData)
+      .then(res => {
+          localStorage.setItem("x-auth-token", res.data.data.token)
+          localStorage.setItem("user-data", JSON.stringify(res.data.data.user))
+      })
     setFormData(initialState)
     console.log(formData);
+
   }
 
     const handleLogins = e => {
@@ -67,6 +75,7 @@ const Header = () => {
             <li className="nav__item"><a href='#' className="nav__link">User</a></li>
             <li className="nav__item"><a href='#' className="nav__link">Projact</a></li>
             <li className="nav__item"><a href='#' className="nav__link">Contact me</a></li>
+            <li className="nav__item"><NavLink to={"/admin"} className="nav__link">Admin panel</NavLink></li>
           </ul>
           <ul className="nav__list">
             <li className="nav__item"><button onClick={()=> setIsLogin(true)} className='download'>Log in</button></li>
