@@ -1,7 +1,6 @@
 import axios from "axios";
 
 const mainUrl = axios.create({
-    // baseURL: "https://ecommerceapi.firdavsdev.uz",
     baseURL: "https://bazar.ilyosbekdev.uz",
 })
 
