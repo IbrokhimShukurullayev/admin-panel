@@ -1,8 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+  font-family: "Manrope", sans-serif;
+  transition: 0.3s;
+}
+
+*,
+*::after,
+*::before {
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+}
+
+/* .container {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.container__big {
+  max-width: 1800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+select,
+input {
+  border: none;
+  outline: none;
 }
 
 .container {

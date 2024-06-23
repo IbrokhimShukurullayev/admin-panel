@@ -4,14 +4,14 @@ export const productApi = api.injectEndpoints({
   endpoints: (build) => ({
     getProduct: build.query({
       query: (params) => ({
-        url: "/products",
+        url: "/products/search",
         params,
       }),
       providesTags: ["Product"],
     }),
     createProduct: build.mutation({
       query: (body) => ({
-        url: "/products",
+        url: "/products/create",
         method: "POST",
         body,
       }),

@@ -6,10 +6,11 @@ import {
 import { toast } from "react-toastify";
 
 const ManageUser = () => {
-  const { data: manageUserGet, isLoading, error } = useGetUserQuery();
+  const { data, isLoading, error } = useGetUserQuery();
+  console.log(data);
   const [deleteUser, { data: deleteUserData, error: deleteUserError }] =
     useDeleteUserMutation();
-  let user = manageUserGet?.data.map((el) => (
+  let user = data?.data.map((el) => (
     <div key={el.id} className="card">
       <div className="car-img">
         <h1>

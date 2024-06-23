@@ -7,15 +7,16 @@ import { toast } from "react-toastify";
 
 const ManageProduct = () => {
   const {
-    data: manageProductGet,
+    data,
     isLoading,
     error,
-  } = useGetProductQuery({ limit: 4, count: 1 });
+  } = useGetProductQuery({ limit: 400 });
+  console.log(data);
   const [
     deleteProduct,
     { data: deleteProductData, error: deleteProductError },
   ] = useDeleteProductMutation();
-  let product = manageProductGet?.data.map((el) => (
+  let product = data?.data?.products?.map((el) => (
     <div className="manage-pr-card" key={el.id}>
       <div className="manage-pr-card-img">
         <img src={el.urls[0]} alt="" />

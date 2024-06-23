@@ -4,7 +4,7 @@ export const userApi = api.injectEndpoints({
   endpoints: (build) => ({
     getUser: build.query({
       query: (params) => ({
-        url: "/users",
+        url: "/users/search",
         params,
       }),
       providesTags: ["User"],
