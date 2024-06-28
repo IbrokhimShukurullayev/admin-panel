@@ -10,6 +10,8 @@ import CreateCategory from "./pages/admin/create-category/CreateCategory";
 import ManageCategory from "./pages/admin/manage-category/ManageCategory";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+// import Login from "./components/login/Login";
+// import Auth from "./Auth/Auth";
 
 function App() {
   return (
@@ -17,14 +19,17 @@ function App() {
       <ToastContainer />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/admin" element={<Admin />}>
+        {/* <Route path="/login" element={<Login />} /> */}
+        {/* <Route path="/" element={<Auth />} > */}
+          <Route path="/admin" element={<Admin />}>
           <Route path="create-product" element={<CreateProduct />} />
           <Route path="manage-product" element={<ManageProduct />} />
           <Route path="create-user" element={<CreateUser />} />
           <Route path="manage-user" element={<ManageUser />} />
           <Route path="create-category" element={<CreateCategory />} />
           <Route path="manage-category" element={<ManageCategory />} />
-        </Route>
+        {/* </Route> */}
+      </Route>
       </Routes>
     </>
   );
